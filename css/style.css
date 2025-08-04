@@ -507,15 +507,53 @@ li {
 /* Form Styles */
 .form-embed {
     background: var(--background-white);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-xl);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-light);
+    box-shadow: var(--shadow-medium);
     margin: var(--spacing-lg) 0;
+    border: 2px solid var(--primary-orange);
+    position: relative;
+}
+
+.form-embed::before {
+    content: "📝";
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    background: var(--background-white);
+    padding: 0 10px;
+    font-size: 1.5rem;
+    z-index: 1;
 }
 
 .form-embed iframe {
     border-radius: var(--radius-md);
     border: 1px solid rgba(210, 105, 30, 0.2);
+    min-height: 800px;
+    width: 100%;
+    display: block;
+}
+
+/* Enhanced form section styling */
+.content-section:has(.form-embed) {
+    background: linear-gradient(135deg, var(--background-cream), var(--background-white));
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    margin: var(--spacing-xl) 0;
+    box-shadow: var(--shadow-light);
+}
+
+.content-section:has(.form-embed) h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    font-size: 2.2rem;
+}
+
+.content-section:has(.form-embed) p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-lg);
 }
 
 /* Footer */
