@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About the Burnerbase - Open Flame Project</title>
-    <meta name="description" content="Learn about the Burnerbase - a volunteer skills database connecting NSW Burns community members with events that need their expertise.">
+    <title>About the Burner Profile System - Open Flame Project</title>
+    <meta name="description" content="Learn how the Burner Profile system helps you advance your career in the NSW Burns community while connecting with meaningful opportunities.">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
@@ -22,95 +22,260 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Open Flame Project</a>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link active">About</a></li>
-                <li><a href="register.html" class="nav-link">Join Burnerbase</a></li>
-                <li><a href="quotes.html" class="nav-link">Community Voices</a></li>
-                <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+                <li><a href="register.html" class="nav-link">Create Profile</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
         </div>
     </nav>
 
     <main id="main-content" class="container">
         <div class="content-section">
-            <h1>About the Burnerbase</h1>
+            <h1>About the Burner Profile System</h1>
+            <p>The Burner Profile system is designed to help you advance your career in the NSW Burns community while connecting you with opportunities that match your skills and interests.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Your Career Development Platform</h2>
+            <p>Think of it as LinkedIn for NSW Burners, but focused entirely on community building and personal growth. Instead of hoping the right opportunities find you, you can actively shape your involvement in the community.</p>
+            
+            <div class="grid grid-2">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Targeted Opportunities</h3>
+                    <p>Get contacted for roles that match your skills, interests, and career goals. No more settling for whatever's available.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">📈</div>
+                    <h3>Track Your Growth</h3>
+                    <p>Build a record of your contributions and watch your reputation grow in the community.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Network Building</h3>
+                    <p>Connect with like-minded people and build lasting relationships through shared projects.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h3>Leadership Pathways</h3>
+                    <p>Access leadership roles and specialized positions as you develop your skills and experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>How It Works</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item current">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>1. Create Your Profile</h3>
+                        <p>Tell us about your skills, experience, and what you want to achieve in the Burns community. Include your career aspirations and areas you want to grow.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>2. Set Your Preferences</h3>
+                        <p>Choose which events can contact you, what types of roles interest you, and how much time you want to commit.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>3. Get Matched</h3>
+                        <p>Event organisers search for people with specific skills and experience. You get contacted directly for relevant opportunities.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>4. Build Your Career</h3>
+                        <p>Take on roles that develop your skills, expand your network, and advance your involvement in the community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>The Technology Behind It</h2>
             
             <div class="info-box">
-                <p><strong>The Burnerbase is a volunteer skills database for the NSW Burns community.</strong> It helps connect experienced community members with events that need their skills.</p>
+                <h3>Partnership with Undiscovered Events</h3>
+                <p><strong>Ryan (T-Dog)</strong> from Undiscovered Events is generously building this system into his existing platform - the same professional ticketing and event management system already used by BOSS and NSW Burns events.</p>
+                
+                <div class="grid grid-2" style="margin-top: 1.5rem;">
+                    <div>
+                        <h4>What This Means for You:</h4>
+                        <ul>
+                            <li>Professional-grade tools and reliability</li>
+                            <li>One login for all NSW Burns activities</li>
+                            <li>Seamless integration with event registration</li>
+                            <li>Local Australian support and development</li>
+                            <li>Regular updates based on community feedback</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Community-First Approach:</h4>
+                        <ul>
+                            <li>Your data stays in the community</li>
+                            <li>Never sold or commercialised</li>
+                            <li>Transparent community governance</li>
+                            <li>Built by burners, for burners</li>
+                            <li>Open source principles and values</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <h2>How it works</h2>
+        <div class="content-section">
+            <h2>The Evolution: Where We're Heading</h2>
             
-            <div class="content-section">
-                <h3>For Volunteers:</h3>
-                <ol>
-                    <li>Create your profile with your skills and experience</li>
-                    <li>Choose which events can see your profile</li>
-                    <li>Get contacted directly for opportunities that match your skills</li>
-                    <li>Update your availability anytime</li>
-                </ol>
+            <div class="timeline">
+                <div class="timeline-item current">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 1: Simple Form (Now)</h3>
+                        <p>Start with a Google Form to capture your skills and interests. Quick and easy to get involved.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 2: Burner Profile System (3-6 months)</h3>
+                        <p>Your profile becomes part of Undiscovered Events platform with advanced search and matching capabilities.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 3: Integrated Management (6-12 months)</h3>
+                        <p>Event organisers can search, contact, and roster volunteers directly. Streamlined coordination and communication tools.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 4: Community Hub (12+ months)</h3>
+                        <p>Your Burner profile becomes your identity across all NSW events with project collaboration, mentorship programs, and community building features.</p>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="content-section">
-                <h3>For Event Organisers:</h3>
-                <ol>
-                    <li>Search for volunteers with specific skills</li>
-                    <li>See experience levels and past contributions</li>
-                    <li>Contact volunteers directly</li>
-                    <li>Build better teams faster</li>
-                </ol>
+        <div class="content-section">
+            <h2>Career Development Focus</h2>
+            
+            <div class="grid grid-2">
+                <div class="info-box">
+                    <h3>For New Community Members</h3>
+                    <ul>
+                        <li><strong>Find Your Place:</strong> Discover where your skills and interests fit</li>
+                        <li><strong>Learn and Grow:</strong> Access mentorship and training opportunities</li>
+                        <li><strong>Start Small:</strong> Begin with manageable roles and build confidence</li>
+                        <li><strong>Make Connections:</strong> Meet experienced community members who can guide you</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box">
+                    <h3>For Experienced Burners</h3>
+                    <ul>
+                        <li><strong>Leadership Roles:</strong> Access coordinator and management positions</li>
+                        <li><strong>Share Expertise:</strong> Mentor newcomers and teach specialized skills</li>
+                        <li><strong>Drive Innovation:</strong> Lead new projects and community initiatives</li>
+                        <li><strong>Cross-Event Impact:</strong> Influence the broader NSW Burns community</li>
+                    </ul>
+                </div>
             </div>
+        </div>
 
-            <h2>Why we built this</h2>
-            <p>Our 2025 community survey showed:</p>
-            <ul>
-                <li><strong>425+ people</strong> ready to volunteer</li>
-                <li><strong>180+ prepared</strong> for leadership roles</li>
-                <li>But organisers struggle to find the right people</li>
-            </ul>
+        <div class="content-section">
+            <h2>Community Governance</h2>
+            
+            <h3>Community Data Stewards</h3>
+            <p>The Burner Profile system is governed by appointed Community Data Stewards who ensure the platform serves the community's interests:</p>
+            
+            <div class="grid grid-2">
+                <div class="info-box">
+                    <h4>Their Responsibilities:</h4>
+                    <ul>
+                        <li>Protecting your privacy and data rights</li>
+                        <li>Making decisions about platform access and usage</li>
+                        <li>Ensuring community benefit over commercial interests</li>
+                        <li>Being accountable to the community</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box">
+                    <h4>Our Commitment:</h4>
+                    <ul>
+                        <li>Radical transparency in all operations</li>
+                        <li>Regular community reports and updates</li>
+                        <li>Open decision-making processes</li>
+                        <li>Community input on major changes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Why This Matters</h2>
             
             <div class="quote">
-                "Workload generally falls on a few key people, on site camp members can be flaky"
-                <div class="quote-attribution">— Event Organiser, 2025 Survey</div>
+                "Our 2025 community survey found that while 425+ people are ready to volunteer and 180+ are prepared for leadership roles, the same core group ends up doing most of the work. This isn't because people don't want to help - it's because we don't have good systems to connect the right people with the right opportunities."
             </div>
-
-            <p>The same core group often does most of the work while skilled community members don't know how to get involved.</p>
-
-            <h2>What makes us different</h2>
             
-            <div class="content-section">
-                <h3>Community owned</h3>
-                <p>Your data belongs to the community, not a company. Community Data Stewards oversee how we handle your information.</p>
+            <div class="grid grid-3">
+                <div class="stat-card">
+                    <span class="stat-number">425+</span>
+                    <span class="stat-label">People ready to volunteer</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">180+</span>
+                    <span class="stat-label">Prepared for leadership roles</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">58%</span>
+                    <span class="stat-label">Identify as neurodivergent</span>
+                </div>
             </div>
-
-            <div class="content-section">
-                <h3>Privacy first</h3>
-                <p>You control who sees your information. Only events you approve can contact you.</p>
-            </div>
-
-            <div class="content-section">
-                <h3>Skills focused</h3>
-                <p>Match people to roles based on experience, not just availability.</p>
-            </div>
-
-            <div class="content-section">
-                <h3>Cross-event</h3>
-                <p>Connect with opportunities across all NSW Burns events.</p>
-            </div>
-
-            <h2>Getting started</h2>
-            <ol>
-                <li><strong>Create your profile</strong> - Tell us about your skills and experience</li>
-                <li><strong>Set your privacy</strong> - Choose which events can contact you</li>
-                <li><strong>Stay updated</strong> - We'll let you know about relevant opportunities</li>
-                <li><strong>Get involved</strong> - Connect with events that need your skills</li>
-            </ol>
-
+            
             <div class="info-box success">
-                <p><strong>Ready to join?</strong> Creating your Burnerbase profile takes about 10 minutes and helps organisers find the right volunteers for the right roles.</p>
-                <a href="register.html" class="btn btn-primary">Create Your Profile</a>
+                <p><strong>The Burner Profile system solves this coordination challenge</strong> while helping individuals advance their community involvement and build meaningful careers in the NSW Burns scene.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <h3>How is this different from Facebook groups?</h3>
+            <p>Facebook groups are great for discussion, but they're not designed for career development and skills matching. The Burner Profile system lets you specify your goals and get contacted for opportunities that advance your involvement, rather than hoping you see the right post at the right time.</p>
+
+            <h3>What if I'm not sure what I want to do?</h3>
+            <p>That's perfect! The system includes career development questions to help you explore different areas of interest. You can start with small roles and gradually discover what excites you most.</p>
+
+            <h3>Will this replace personal connections?</h3>
+            <p>Not at all! The goal is to supplement personal networks, not replace them. Many of the best opportunities still come through relationships, but this system ensures those relationships can form based on shared interests and complementary skills.</p>
+
+            <h3>What about privacy and data security?</h3>
+            <p>Your privacy is our top priority. You control exactly which events can see your information and contact you. We follow Australian privacy laws and maintain transparent governance through Community Data Stewards.</p>
+
+            <div class="info-box">
+                <p><strong>Ready to start building your Burner career?</strong> <a href="register.html">Create your profile →</a></p>
             </div>
         </div>
     </main>
@@ -126,6 +291,8 @@
             <p>&copy; 2025 Open Flame Project. Community owned, privacy first.</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
 

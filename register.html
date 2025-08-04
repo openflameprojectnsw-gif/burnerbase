@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join the Burnerbase - Open Flame Project</title>
-    <meta name="description" content="Create your volunteer profile and connect with NSW Burns events that need your skills.">
+    <title>Create Your Burner Profile - Open Flame Project</title>
+    <meta name="description" content="Create your Burner profile to unlock career opportunities and connect with the NSW Burns community. Takes 10 minutes to build your community potential.">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
@@ -22,48 +22,90 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Open Flame Project</a>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="register.html" class="nav-link active">Join Burnerbase</a></li>
-                <li><a href="quotes.html" class="nav-link">Community Voices</a></li>
-                <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+                <li><a href="register.html" class="nav-link active">Create Profile</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
         </div>
     </nav>
 
     <main id="main-content" class="container">
         <div class="content-section">
-            <h1>Join the Burnerbase</h1>
-            <p class="lead">Create your volunteer profile and help NSW Burns events find the right people for the right roles.</p>
-            
-            <div class="info-box">
-                <h3>What you'll do:</h3>
-                <ul>
-                    <li>Share your skills and experience (about 10 minutes)</li>
-                    <li>Choose which events can see your profile</li>
-                    <li>Get contacted directly for relevant opportunities</li>
-                    <li>Help build stronger, more inclusive events</li>
-                </ul>
-            </div>
+            <h1>Create Your Burner Profile</h1>
+            <p>Build your career in the NSW Burns community. Get matched with opportunities that grow your skills, expand your network, and advance your involvement.</p>
+        </div>
 
-            <div class="info-box warning">
-                <h3>Before you start:</h3>
-                <ul>
-                    <li>Read our <a href="privacy.html">Privacy Policy</a> to understand how we protect your information</li>
-                    <li>Review our <a href="conduct.html">Code of Conduct</a> for community guidelines</li>
-                    <li>Have about 10 minutes to complete the form</li>
-                </ul>
+        <div class="content-section">
+            <h2>What You'll Unlock</h2>
+            <div class="grid grid-2">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Targeted Opportunities</h3>
+                    <p>Get contacted for roles that match your skills and career goals, not random requests for help.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Community Connections</h3>
+                    <p>Meet like-minded people and build lasting relationships through shared projects and interests.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">📈</div>
+                    <h3>Career Growth</h3>
+                    <p>Build your reputation and access leadership roles as you develop your skills and experience.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">✨</div>
+                    <h3>Inner Circle Access</h3>
+                    <p>Get invited to opportunities before they're posted publicly. Be part of making things happen.</p>
+                </div>
             </div>
         </div>
 
         <div class="content-section">
-            <h2>Create Your Profile</h2>
+            <h2>Your Burner Career Development</h2>
+            <p>This form is designed to help you chart your path in the NSW Burns community. We'll ask about your current experience, skills you want to develop, and how you want to grow your involvement.</p>
+            
+            <div class="info-box success">
+                <h3>Based on Proven Community Research</h3>
+                <p>This form uses the same structure as our successful 2025 NSW Burns Community Survey, with categories and questions that our community understands and responds to.</p>
+            </div>
             
             <!-- Google Form Embed Section -->
             <div class="form-embed">
                 <div class="info-box">
+                    <h3>🚀 Ready to Start? Here's What to Expect:</h3>
+                    <div class="grid grid-2">
+                        <div>
+                            <h4>Profile Sections:</h4>
+                            <ul>
+                                <li><strong>Basic Info:</strong> Contact details and location</li>
+                                <li><strong>Burns Experience:</strong> Your history and involvement level</li>
+                                <li><strong>Skills & Talents:</strong> What you bring to the community</li>
+                                <li><strong>Career Goals:</strong> Where you want to grow</li>
+                                <li><strong>Availability:</strong> Time commitment and scheduling</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Career Development:</h4>
+                            <ul>
+                                <li><strong>Role Aspirations:</strong> Leadership, technical, creative paths</li>
+                                <li><strong>Skill Development:</strong> What you want to learn</li>
+                                <li><strong>Community Impact:</strong> How you want to contribute</li>
+                                <li><strong>Networking:</strong> Who you want to connect with</li>
+                                <li><strong>Privacy Settings:</strong> Control who can contact you</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p><strong>⏱️ Time Required:</strong> About 10 minutes to complete</p>
+                    <p><strong>🔒 Privacy:</strong> You control who sees your information</p>
+                    <p><strong>✏️ Updates:</strong> You can modify your profile anytime</p>
+                </div>
+                
+                <div class="info-box warning">
                     <p><strong>Google Form Integration:</strong> Replace the src URL below with your actual Google Form embed URL.</p>
                     <p>To get the embed URL:</p>
                     <ol>
@@ -76,55 +118,180 @@
                 </div>
                 
                 <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdBF-HIqwhOoIKkqGfR6rmAoDEC7OiIlMK9kFpZvBclvpgVhg/viewform?embedded=true" 
+                    src="YOUR_GOOGLE_FORM_URL_HERE" 
                     width="100%" 
-                    height="1392" 
+                    height="3000" 
                     frameborder="0" 
                     marginheight="0" 
                     marginwidth="0"
-                    title="Burnerbase Registration Form">
+                    title="Burner Profile Registration Form"
+                    style="border-radius: 8px; border: 1px solid rgba(210, 105, 30, 0.2);">
                     Loading form...
                 </iframe>
                 
                 <!-- Fallback link if iframe doesn't work -->
                 <div class="info-box">
                     <p><strong>Having trouble with the form above?</strong></p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBF-HIqwhOoIKkqGfR6rmAoDEC7OiIlMK9kFpZvBclvpgVhg/viewform" class="btn btn-primary" target="_blank" rel="noopener">Open Form in New Tab</a>
+                    <a href="YOUR_GOOGLE_FORM_URL_HERE" class="btn btn-primary" target="_blank" rel="noopener">Open Form in New Tab</a>
                 </div>
             </div>
         </div>
 
         <div class="content-section">
-            <h2>What happens next?</h2>
-            <ol>
-                <li><strong>Form submission:</strong> Your information is securely stored</li>
-                <li><strong>Profile review:</strong> We'll verify your submission (usually within 48 hours)</li>
-                <li><strong>Welcome email:</strong> You'll receive confirmation and next steps</li>
-                <li><strong>Event matching:</strong> Organisers can find you for relevant opportunities</li>
-                <li><strong>Stay updated:</strong> We'll contact you about opportunities that match your skills</li>
-            </ol>
+            <h2>What Happens Next?</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>1. Profile Review</h3>
+                        <p>We'll review your profile to ensure it's complete and follows our community guidelines. This usually takes 1-2 business days.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>2. System Integration</h3>
+                        <p>Your profile gets added to the searchable database that approved event organisers can access.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>3. Opportunity Matching</h3>
+                        <p>Event organisers search for volunteers with your skills and experience for relevant opportunities.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>4. Direct Contact</h3>
+                        <p>You get contacted directly about opportunities that match your profile, interests, and career goals.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="content-section">
-            <h2>Questions?</h2>
-            <p>Need help with registration or have questions about the Burnerbase?</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:open.flame.project.nsw@gmail.com">open.flame.project.nsw@gmail.com</a></li>
-                <li><strong>Slack:</strong> #open-flame-project on NSW Burners Slack</li>
-                <li><strong>More info:</strong> <a href="about.html">About the Burnerbase</a></li>
-            </ul>
+            <h2>The Future: Undiscovered Events Integration</h2>
+            
+            <div class="info-box">
+                <h3>Professional Platform, Community Values</h3>
+                <p>Your profile will soon integrate with <strong>Undiscovered Events</strong> - the platform already used by BOSS and NSW Burns events. This means:</p>
+                
+                <div class="grid grid-2" style="margin-top: 1.5rem;">
+                    <div>
+                        <h4>Enhanced Features Coming:</h4>
+                        <ul>
+                            <li>Advanced search and filtering capabilities</li>
+                            <li>Direct messaging and communication tools</li>
+                            <li>Volunteer scheduling and roster management</li>
+                            <li>Project collaboration spaces</li>
+                            <li>Community reputation and recognition system</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Seamless Experience:</h4>
+                        <ul>
+                            <li>One login for all NSW Burns activities</li>
+                            <li>Integrated with event registration and ticketing</li>
+                            <li>Professional-grade tools and reliability</li>
+                            <li>Local Australian support and development</li>
+                            <li>Regular updates based on community feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="content-section">
-            <h2>Privacy & Data</h2>
-            <p>Your privacy is important to us:</p>
-            <ul>
-                <li>You control who can see your information</li>
-                <li>Community Data Stewards oversee data governance</li>
-                <li>You can update or delete your profile anytime</li>
-                <li>We never sell your data to anyone</li>
-            </ul>
-            <p><a href="privacy.html">Read our full Privacy Policy</a></p>
+            <h2>Privacy & Data Protection</h2>
+            
+            <div class="grid grid-2">
+                <div class="info-box">
+                    <h3>Your Data, Your Control</h3>
+                    <ul>
+                        <li>You choose which events can see your profile</li>
+                        <li>You can update your privacy settings anytime</li>
+                        <li>You can pause or delete your profile whenever you want</li>
+                        <li>We follow Australian privacy laws and community governance</li>
+                        <li>Your data stays in the community - never sold or commercialised</li>
+                    </ul>
+                    <p><a href="privacy.html">Read our full Privacy Policy →</a></p>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Community Guidelines</h3>
+                    <p>By creating your Burner profile, you agree to:</p>
+                    <ul>
+                        <li>Treat all community members with respect</li>
+                        <li>Follow our Code of Conduct for any events you volunteer with</li>
+                        <li>Provide accurate information about your skills and experience</li>
+                        <li>Respect the privacy and boundaries of other community members</li>
+                        <li>Support the inclusive, welcoming nature of our community</li>
+                    </ul>
+                    <p><a href="conduct.html">Read our Code of Conduct →</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Career Development Questions</h2>
+            <p>The form includes specific questions to help you chart your Burner career path:</p>
+            
+            <div class="grid grid-2">
+                <div class="info-box">
+                    <h3>Role Aspirations</h3>
+                    <ul>
+                        <li>What type of roles do you want to grow into?</li>
+                        <li>Are you interested in leadership positions?</li>
+                        <li>Do you want to specialise in technical, creative, or coordination roles?</li>
+                        <li>How do you want to contribute to community building?</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Skill Development</h3>
+                    <ul>
+                        <li>What skills do you want to develop through volunteering?</li>
+                        <li>Are you interested in mentorship opportunities?</li>
+                        <li>What areas of expertise do you want to build?</li>
+                        <li>How can the community support your learning goals?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Questions or Need Help?</h2>
+            <div class="grid grid-2">
+                <div class="info-box">
+                    <h3>Registration Support</h3>
+                    <p>Having trouble with the form or have questions about the process?</p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:open.flame.project.nsw@gmail.com">open.flame.project.nsw@gmail.com</a></li>
+                        <li><strong>Slack:</strong> #open-flame-project on NSW Burners Slack</li>
+                        <li><strong>Response time:</strong> Usually within 24 hours</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box">
+                    <h3>Technical Issues</h3>
+                    <p>If the form isn't working or you're experiencing technical problems:</p>
+                    <ul>
+                        <li>Try refreshing the page</li>
+                        <li>Check your internet connection</li>
+                        <li>Try a different browser</li>
+                        <li>Contact us with details about the issue</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section hero">
+            <h2>Ready to Build Your Burner Career?</h2>
+            <p>Join 425+ community members who are ready to take their involvement to the next level. Create your profile and start connecting with opportunities that match your goals.</p>
+            <p class="hero-note">Takes 10 minutes • Completely free • Community owned • You control your privacy</p>
         </div>
     </main>
 
@@ -139,6 +306,8 @@
             <p>&copy; 2025 Open Flame Project. Community owned, privacy first.</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
 

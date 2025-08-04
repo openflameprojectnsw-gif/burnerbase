@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Flame Project - Mobilising Our Collective Potential</title>
-    <meta name="description" content="Join the Burnerbase - a volunteer skills database connecting NSW Burns community members with events that need their expertise.">
+    <title>Build Your Burner Career - Open Flame Project</title>
+    <meta name="description" content="Create your Burner profile and unlock opportunities to grow your skills, connect with your community, and advance your involvement in NSW Burns events.">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
@@ -22,171 +22,251 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Open Flame Project</a>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="register.html" class="nav-link">Join Burnerbase</a></li>
-                <li><a href="quotes.html" class="nav-link">Community Voices</a></li>
-                <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+                <li><a href="register.html" class="nav-link">Create Profile</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
         </div>
     </nav>
 
     <main id="main-content" class="container">
         <!-- Hero Section -->
-        <div class="content-section" style="text-align: center; background: linear-gradient(135deg, var(--background-cream) 0%, rgba(255, 152, 0, 0.1) 100%);">
-            <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Mobilising Our Collective Potential</h1>
-            <p style="font-size: 1.3rem; color: var(--text-light); margin-bottom: 2rem; max-width: none;">The NSW Burns community has incredible volunteer capacity. Now we're building the infrastructure to mobilise it.</p>
-            <a href="register.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 2.5rem;">Join the Burnerbase</a>
+        <div class="hero">
+            <h1>Build Your Burner Career</h1>
+            <p class="hero-subtitle">Connect with Your Community</p>
+            <p>From attendee to organiser - chart your path in the NSW Burns community. Get matched with opportunities that grow your skills and expand your network.</p>
+            <a href="register.html" class="btn btn-primary">Create Your Burner Profile</a>
+            <p class="hero-note">10 minutes to unlock your community potential</p>
         </div>
 
-        <!-- Problem Statement -->
+        <!-- Value Propositions -->
         <div class="content-section">
-            <h2>The Challenge We Face</h2>
-            <p>Our 2025 community survey revealed a critical gap:</p>
+            <h2>Why Create Your Burner Profile?</h2>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
-                <div class="info-box" style="text-align: center;">
-                    <h3 style="font-size: 2.5rem; color: var(--primary-orange); margin-bottom: 0.5rem;">425+</h3>
-                    <p>People ready to volunteer</p>
-                </div>
-                <div class="info-box" style="text-align: center;">
-                    <h3 style="font-size: 2.5rem; color: var(--primary-orange); margin-bottom: 0.5rem;">180+</h3>
-                    <p>Prepared for leadership roles</p>
-                </div>
-                <div class="info-box warning" style="text-align: center;">
-                    <h3 style="font-size: 2.5rem; color: #856404; margin-bottom: 0.5rem;">Same</h3>
-                    <p>Core group doing most work</p>
-                </div>
-            </div>
-
-            <div class="quote">
-                "Workload generally falls on a few key people, on site camp members can be flaky"
-                <div class="quote-attribution">— Event Organiser, 2025 Survey</div>
-            </div>
-        </div>
-
-        <!-- Solution -->
-        <div class="content-section">
-            <h2>Our Solution: The Burnerbase</h2>
-            <p>A volunteer skills database that connects experienced community members with events that need their expertise.</p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
-                <div class="info-box">
-                    <h3>For Volunteers</h3>
+            <div class="grid grid-2">
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h3>Advance Your Burner Career</h3>
                     <ul>
-                        <li>Create your skills profile</li>
-                        <li>Choose which events can contact you</li>
-                        <li>Get matched with relevant opportunities</li>
-                        <li>Build your Burns community involvement</li>
+                        <li>Build your reputation in the community</li>
+                        <li>Get access to leadership roles and specialized positions</li>
+                        <li>Develop new skills through diverse volunteer opportunities</li>
+                        <li>Create a track record that opens doors to bigger events</li>
                     </ul>
                 </div>
-                <div class="info-box">
-                    <h3>For Organisers</h3>
+                
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Connect with Your Tribe</h3>
                     <ul>
-                        <li>Find volunteers with specific skills</li>
-                        <li>Access the whole community, not just your network</li>
-                        <li>Build stronger, more capable teams</li>
-                        <li>Reduce recruitment time and effort</li>
+                        <li>Meet like-minded people who share your passions</li>
+                        <li>Join teams working on projects you care about</li>
+                        <li>Build lasting friendships through shared experiences</li>
+                        <li>Find your place in the community beyond just attending</li>
+                    </ul>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Get the Roles You Actually Want</h3>
+                    <ul>
+                        <li>No more being stuck with whatever's left</li>
+                        <li>Match your skills to roles you'll actually enjoy</li>
+                        <li>Specify your interests and get contacted for relevant opportunities</li>
+                        <li>Build expertise in areas you want to grow</li>
+                    </ul>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">✨</div>
+                    <h3>Skip the FOMO and Politics</h3>
+                    <ul>
+                        <li>Get invited to opportunities before they're posted publicly</li>
+                        <li>Access events and roles through merit, not just who you know</li>
+                        <li>Be part of the inner circle that makes things happen</li>
+                        <li>Get recognized for your contributions</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Community Voices -->
+        <!-- Community Voice -->
         <div class="content-section">
-            <h2>What the Community Says</h2>
+            <h2>What Our Community Says</h2>
             
             <div class="quote">
                 "Workload generally falls on a few key people, on site camp members can be flaky"
-                <div class="quote-attribution">— Event Organiser</div>
+                <div class="quote-attribution">— Event Organiser, 2025 NSW Burns Survey</div>
             </div>
 
             <div class="quote">
                 "An easy way for volunteers to sign up for shifts without me having to contact them all"
-                <div class="quote-attribution">— Team Lead</div>
+                <div class="quote-attribution">— Team Lead, 2025 NSW Burns Survey</div>
             </div>
 
-            <p style="text-align: center; margin-top: 2rem;">
-                <a href="quotes.html" class="btn btn-secondary">Read More Community Voices</a>
-            </p>
+            <div class="quote">
+                "I'd like to see more coordination between events - sharing resources, knowledge, volunteers"
+                <div class="quote-attribution">— Event Organiser, 2025 NSW Burns Survey</div>
+            </div>
         </div>
 
-        <!-- Key Features -->
+        <!-- The Vision -->
         <div class="content-section">
-            <h2>Why the Burnerbase Works</h2>
+            <h2>The Vision: Where This Is Heading</h2>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                <div class="info-box">
-                    <h3>Community Owned</h3>
-                    <p>Your data belongs to the community, not a company. Community Data Stewards ensure your interests come first.</p>
+            <div class="timeline">
+                <div class="timeline-item current">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 1: Simple Form (Now)</h3>
+                        <p>Start with a simple Google Form to capture your skills and interests. Quick and easy to get involved.</p>
+                    </div>
                 </div>
-                <div class="info-box">
-                    <h3>Privacy First</h3>
-                    <p>You control who sees your information. Only events you approve can contact you.</p>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 2: Burner Profile System (3-6 months)</h3>
+                        <p>Your profile becomes part of <strong>Undiscovered Events</strong> - the platform already used by BOSS and other NSW events for ticketing and event management.</p>
+                    </div>
                 </div>
-                <div class="info-box">
-                    <h3>Skills Focused</h3>
-                    <p>Match people to roles based on experience and capability, not just availability.</p>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 3: Integrated Volunteer Management (6-12 months)</h3>
+                        <p>Event organisers can search, contact, and roster volunteers directly through the platform. Streamlined coordination and communication.</p>
+                    </div>
                 </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Phase 4: Community Hub (12+ months)</h3>
+                        <p>Your Burner profile becomes your identity across all NSW events - with communication tools, project collaboration, and community building features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Undiscovered Events Partnership -->
+        <div class="content-section">
+            <h2>Powered by Undiscovered Events</h2>
+            
+            <div class="info-box">
+                <h3>Professional Platform, Community Values</h3>
+                <p><strong>Ryan (T-Dog)</strong> from Undiscovered Events is generously supporting this initiative by building it into his existing platform - the same system already used by BOSS and NSW Burns events for ticketing and event management.</p>
+                
+                <div class="grid grid-2" style="margin-top: 1.5rem;">
+                    <div>
+                        <h4>What This Means for You:</h4>
+                        <ul>
+                            <li>Professional-grade tools and reliability</li>
+                            <li>One login for all NSW Burns activities</li>
+                            <li>Seamless integration with event registration</li>
+                            <li>Local Australian support and development</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Community-First Approach:</h4>
+                        <ul>
+                            <li>Your data stays in the community</li>
+                            <li>Never sold or commercialized</li>
+                            <li>Transparent community governance</li>
+                            <li>Built by burners, for burners</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Survey Results -->
+        <div class="content-section">
+            <h2>Our Community Has the Capacity</h2>
+            <p>The 2025 NSW Burns Community Survey revealed incredible untapped potential:</p>
+            
+            <div class="grid grid-3">
+                <div class="stat-card">
+                    <span class="stat-number">425+</span>
+                    <span class="stat-label">People ready to volunteer</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">180+</span>
+                    <span class="stat-label">Prepared for leadership roles</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">58%</span>
+                    <span class="stat-label">Identify as neurodivergent</span>
+                </div>
+            </div>
+
+            <div class="info-box success">
+                <p><strong>The problem isn't lack of willing volunteers - it's lack of coordination systems.</strong> The Burner Profile system solves this by connecting the right people with the right opportunities.</p>
+            </div>
+        </div>
+
+        <!-- Career Development -->
+        <div class="content-section">
+            <h2>Shape Your Burner Journey</h2>
+            
+            <div class="grid grid-2">
                 <div class="info-box">
-                    <h3>Cross-Event</h3>
-                    <p>Connect with opportunities across all NSW Burns events, building a stronger community.</p>
+                    <h3>For New Community Members</h3>
+                    <ul>
+                        <li>Perfect way to get connected and find your place</li>
+                        <li>Mentorship opportunities available</li>
+                        <li>Start with small roles and grow your involvement</li>
+                        <li>Learn from experienced community members</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box">
+                    <h3>For Experienced Burners</h3>
+                    <ul>
+                        <li>Take on leadership and specialized roles</li>
+                        <li>Share your expertise with the community</li>
+                        <li>Help organize new events and initiatives</li>
+                        <li>Mentor newcomers and build the next generation</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
         <!-- Call to Action -->
-        <div class="content-section" style="background: linear-gradient(135deg, var(--primary-orange) 0%, var(--secondary-orange) 100%); color: white; text-align: center;">
-            <h2 style="color: white;">Ready to Get Involved?</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Join the Burnerbase and help us mobilise our community's collective potential.</p>
+        <div class="content-section hero">
+            <h2>Ready to Build Your Burner Career?</h2>
+            <p>Join the movement building the future of NSW Burns. Create your profile and start connecting with opportunities that match your skills and interests.</p>
             
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="register.html" class="btn" style="background-color: white; color: var(--primary-orange); font-weight: 600;">Create Your Profile</a>
-                <a href="about.html" class="btn" style="background-color: transparent; color: white; border: 2px solid white;">Learn More</a>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="register.html" class="btn btn-primary">Create Your Profile</a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
             </div>
-        </div>
-
-        <!-- Timeline -->
-        <div class="content-section">
-            <h2>What's Happening Now</h2>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-                <div class="info-box success">
-                    <h3>August 2025</h3>
-                    <p><strong>Survey Complete</strong><br>518+ responses analysed, community needs identified</p>
-                </div>
-                <div class="info-box" style="border-color: var(--primary-orange);">
-                    <h3>September 2025</h3>
-                    <p><strong>Burnerbase Launch</strong><br>Registration opens, pilot with key events</p>
-                </div>
-                <div class="info-box">
-                    <h3>October 2025</h3>
-                    <p><strong>Community Integration</strong><br>Full integration with Undiscovered Events platform</p>
-                </div>
-            </div>
+            <p class="hero-note">Takes 10 minutes • Completely free • Community owned</p>
         </div>
 
         <!-- FAQ -->
         <div class="content-section">
             <h2>Common Questions</h2>
             
-            <h3>Is this free to use?</h3>
-            <p>Yes, completely free. This is a community initiative, not a commercial product.</p>
+            <h3>Why should I trust this with my information?</h3>
+            <p>Built by community members, for community members. Your data stays in the community - never sold or commercialized. Transparent governance by appointed Community Data Stewards ensures your interests come first.</p>
 
-            <h3>Who can see my information?</h3>
-            <p>Only event organisers you specifically approve. You have full control over your privacy settings.</p>
+            <h3>What if I'm too busy to volunteer much?</h3>
+            <p>You control your availability and commitment level. Get contacted only for opportunities that match your interests and schedule. Start small and grow your involvement over time.</p>
 
-            <h3>What if I change my mind?</h3>
-            <p>You can update your privacy settings, pause your profile, or delete your account anytime.</p>
+            <h3>I'm new to the community - is this for me?</h3>
+            <p>Absolutely! This is the perfect way to get connected and find your place. Mentorship opportunities are available, and all experience levels are welcome.</p>
 
-            <h3>How is this different from just posting in Facebook groups?</h3>
-            <p>The Burnerbase lets organisers search for specific skills and experience levels, making it much easier to find the right person for each role.</p>
+            <h3>How is this different from Facebook groups?</h3>
+            <p>Facebook groups are great for discussion, but they're not designed for skills matching and career development. The Burner Profile system lets you specify your interests and get contacted for relevant opportunities, rather than hoping you see the right post at the right time.</p>
 
-            <p style="margin-top: 2rem;">
-                <a href="contact.html">Have more questions? Get in touch →</a>
-            </p>
+            <div class="info-box">
+                <p><strong>Still have questions?</strong> <a href="contact.html">Get in touch →</a></p>
+            </div>
         </div>
     </main>
 
@@ -201,6 +281,8 @@
             <p>&copy; 2025 Open Flame Project. Community owned, privacy first.</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
 
