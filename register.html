@@ -169,32 +169,7 @@
             </div>
         </div>
 
-        <!-- Progress Box -->
-        <div class="content-section">
-            <div class="info-box success">
-                <h2>🚀 Create Your Burner Profile</h2>
-                <p><strong>Ready to get started?</strong> Your profile helps event organisers find the right people for the right opportunities.</p>
-                
-
-                
-                <!-- Support Information -->
-                <div class="support-info">
-                    <h4>Need Help?</h4>
-                    <div class="grid grid-2">
-                        <div class="support-option">
-                            <strong>📧 Email Support</strong>
-                            <p><a href="mailto:open.flame.project.nsw@gmail.com">open.flame.project.nsw@gmail.com</a></p>
-                            <p><em>Response within 24 hours</em></p>
-                        </div>
-                        <div class="support-option">
-                            <strong>💬 Quick Questions</strong>
-                            <p>Having trouble with the form? We're here to help you get connected.</p>
-                            <button class="btn btn-outline" onclick="openQuickHelp()">Get Quick Help</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- Registration Form - Full Width -->
         <div class="content-section">
@@ -223,6 +198,16 @@
                             <li>Use voice-to-text for longer answers</li>
                             <li>Take breaks - your progress is saved</li>
                         </ul>
+                    </div>
+                </div>
+                
+                <!-- Progress Bar -->
+                <div class="form-progress" style="margin-top: 2rem;">
+                    <div class="progress-line">
+                        <div class="progress-fill" id="form-progress-fill" style="width: 0%;"></div>
+                    </div>
+                    <div class="progress-text" style="text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-medium);">
+                        <span id="form-progress-text">Form loaded • Ready to start</span>
                     </div>
                 </div>
                 
@@ -431,6 +416,37 @@
                     'event_label': 'registration_form'
                 });
             }
+            // Start progress animation
+            startFormProgress();
+        }
+
+        // Form Progress Animation
+        function startFormProgress() {
+            const progressFill = document.getElementById('form-progress-fill');
+            const progressText = document.getElementById('form-progress-text');
+            
+            if (!progressFill || !progressText) return;
+            
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 1;
+                progressFill.style.width = `${Math.min(progress, 95)}%`;
+                
+                if (progress < 20) {
+                    progressText.textContent = 'Form loaded • Ready to start';
+                } else if (progress < 50) {
+                    progressText.textContent = 'Form active • Ready for input';
+                } else if (progress < 80) {
+                    progressText.textContent = 'Form ready • Begin your profile';
+                } else if (progress < 95) {
+                    progressText.textContent = 'Form ready • All systems go!';
+                }
+                
+                if (progress >= 95) {
+                    clearInterval(interval);
+                    progressText.textContent = 'Form ready • Start creating your profile';
+                }
+            }, 100); // Update every 100ms for smooth animation
         }
 
         // Quick Help Modal (placeholder)
@@ -515,6 +531,24 @@
             position: relative;
             width: 100%;
             max-width: none;
+        }
+
+        .form-progress {
+            margin-top: 2rem;
+        }
+
+        .progress-line {
+            width: 100%;
+            height: 3px;
+            background: #e0e0e0;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-orange), var(--secondary-orange));
+            transition: width 0.3s ease;
         }
 
         .form-wrapper {
