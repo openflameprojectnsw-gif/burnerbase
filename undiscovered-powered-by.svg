@@ -4,11 +4,11 @@
   
   <defs>
     <style>
-      .logo-text { fill: var(--logo-text-color, #4f4f4f); }
-      .logo-icon-outer { fill: var(--logo-icon-outer, #4f4f4f); }
-      .logo-icon-inner { fill: var(--logo-icon-inner, #f16024); }
-      .logo-icon-accent { fill: var(--logo-icon-accent, #f79021); }
-      .logo-icon-highlight { fill: var(--logo-icon-highlight, #fdb716); }
+      .logo-text { fill: var(--logo-text-color, #ffffff); }
+      .logo-icon-outer { fill: var(--logo-icon-outer, #ffffff); }
+      .logo-icon-inner { fill: var(--logo-icon-inner, #ffffff); }
+      .logo-icon-accent { fill: var(--logo-icon-accent, #ffffff); }
+      .logo-icon-highlight { fill: var(--logo-icon-highlight, #ffffff); }
     </style>
   </defs>
   

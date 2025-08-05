@@ -126,11 +126,11 @@ body {
     max-width: 100%;
     background: transparent;
     /* CSS variables for logo theming */
-    --logo-text-color: #4f4f4f;
-    --logo-icon-outer: #4f4f4f;
-    --logo-icon-inner: #f16024;
-    --logo-icon-accent: #f79021;
-    --logo-icon-highlight: #fdb716;
+    --logo-text-color: #ffffff;
+    --logo-icon-outer: #ffffff;
+    --logo-icon-inner: #ffffff;
+    --logo-icon-accent: #ffffff;
+    --logo-icon-highlight: #ffffff;
 }
 
 .nav-menu {

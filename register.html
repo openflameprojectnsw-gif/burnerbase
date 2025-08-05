@@ -175,15 +175,7 @@
                 <h2>🚀 Create Your Burner Profile</h2>
                 <p><strong>Ready to get started?</strong> Your profile helps event organisers find the right people for the right opportunities.</p>
                 
-                <!-- Progress Indicator -->
-                <div class="progress-container" style="margin: 1.5rem 0;">
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progress-fill" style="width: 0%;"></div>
-                    </div>
-                    <div class="progress-text">
-                        <span id="progress-text">Ready to start • Estimated 10 minutes</span>
-                    </div>
-                </div>
+
                 
                 <!-- Support Information -->
                 <div class="support-info">
@@ -231,6 +223,20 @@
                             <li>Use voice-to-text for longer answers</li>
                             <li>Take breaks - your progress is saved</li>
                         </ul>
+                    </div>
+                </div>
+                
+                <!-- Alternative Form Link -->
+                <div class="form-alternative">
+                    <div class="info-box">
+                        <h4>🔗 Having trouble with the embedded form?</h4>
+                        <p>If the form above isn't working properly, you can use the full Google Form directly:</p>
+                        <a href="https://forms.gle/hYC3NhEDCenQ2s5Z9" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            📝 Open Full Form in New Tab
+                        </a>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-medium);">
+                            <em>This opens the complete form in a new browser tab for the best experience.</em>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -439,37 +445,7 @@
             }
         }
 
-        // Progress Simulation (since we can't track Google Form progress directly)
-        function simulateProgress() {
-            const progressFill = document.getElementById('progress-fill');
-            const progressText = document.getElementById('progress-text');
-            
-            // Simulate progress based on time spent
-            let progress = 0;
-            const interval = setInterval(() => {
-                progress += 1;
-                progressFill.style.width = `${Math.min(progress, 95)}%`;
-                
-                if (progress < 20) {
-                    progressText.textContent = 'Getting started • About 8 minutes remaining';
-                } else if (progress < 50) {
-                    progressText.textContent = 'Making good progress • About 5 minutes remaining';
-                } else if (progress < 80) {
-                    progressText.textContent = 'Almost there • About 2 minutes remaining';
-                } else if (progress < 95) {
-                    progressText.textContent = 'Final questions • Almost done!';
-                }
-                
-                if (progress >= 95) {
-                    clearInterval(interval);
-                }
-            }, 6000); // Update every 6 seconds for 10-minute form
-        }
 
-        // Start progress simulation when form loads
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(simulateProgress, 2000); // Start after 2 seconds
-        });
 
         // Track page engagement
         if (typeof gtag !== 'undefined') {
@@ -533,29 +509,7 @@
             color: var(--text-medium);
         }
 
-        .progress-container {
-            text-align: center;
-        }
 
-        .progress-bar {
-            width: 100%;
-            height: 8px;
-            background: #e0e0e0;
-            border-radius: 4px;
-            overflow: hidden;
-            margin-bottom: 0.5rem;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--primary-orange), var(--secondary-orange));
-            transition: width 0.3s ease;
-        }
-
-        .progress-text {
-            font-size: 0.9rem;
-            color: var(--text-medium);
-        }
 
         .form-container {
             position: relative;
