@@ -122,7 +122,14 @@ body {
 .powered-by-logo {
     height: 28px;
     opacity: 1;
-    filter: brightness(0) invert(1);
+    /* Temporarily remove filter to test if logo loads */
+    /* filter: brightness(0) invert(1) contrast(200%); */
+    display: block;
+    max-width: 100%;
+    /* Ensure visibility on orange background */
+    background: transparent;
+    /* Debug: add border to see if image is loading */
+    border: 1px solid red;
 }
 
 .nav-menu {
